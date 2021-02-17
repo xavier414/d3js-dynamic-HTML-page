@@ -16,21 +16,36 @@
 
             <p></p>
 
-            <button onclick="colorP()"> Colour Red</button>
+            <button onclick="colorR()"> Colour Red</button>
+            <button onclick="colorP()"> Colour Blue</button>
 
+            <p></p>
+            <input id="box" type="text"><br>
+            <br \>
+            <button onclick="givevalue()" type="button">Click Me!</button>  
                 
+
+            <form>
+                <input type="button" value="Start machine">
+              </form>
+              <p>The machine is stopped.</p>
+
+
             </body>
 
         
        
 <script> 
 
-function colorP(){
+function colorR(){
     d3.selectAll("p").style("color","red");}
+    
+function colorP(){
+    d3.selectAll("p").style("color","blue");}
 
-
-
-
+function givevalue(){
+   d3.getElementById('box').p;
+}
 
 </script>
 
