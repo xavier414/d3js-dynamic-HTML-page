@@ -1,52 +1,59 @@
+
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Part 1 - Homework 2</title>
-        <script src="https://d3js.org/d3.v6.min.js"></script>
 
-        <body>
+<head>
 
-            <p>Part 1 - Homework 2 </p>
-            
-  
-            <input type="text"> 
-                
+	<title>Part 1 - Homework 2</title>
 
-            </input>
-
-            <p></p>
-
-            <button onclick="colorR()"> Colour Red</button>
-            <button onclick="colorP()"> Colour Blue</button>
-
-            <p></p>
-            <input id="box" type="text"><br>
-            <br \>
-            <button onclick="givevalue()" type="button">Click Me!</button>  
-                
-
-            <form>
-                <input type="button" value="Start machine">
-              </form>
-              <p>The machine is stopped.</p>
+</head>
 
 
-            </body>
+<body>
 
-        
-       
-<script> 
+Homework 2 - Part 1
 
-function colorR(){
-    d3.selectAll("p").style("color","red");}
-    
-function colorP(){
-    d3.selectAll("p").style("color","blue");}
+<p></p>
 
-function givevalue(){
-   d3.getElementById('box').p;
-}
+<input type="text" id="inputtedtext" name="" placeholder="Write here"> 
+
+<p></p>
+
+<input type="button" name="" value="Print" onclick="addNewParagraph()">
+
+<div id="paragraph">
+
+</div>
+
+<br><br>
+
+<input type="button" name="" value="Red" onclick="colourR()">
+
+<input type="button" name="" value="Blue" onclick="colourB()">
+
+
+
+<script src="https://d3js.org/d3.v6.min.js"></script>
+<script type="text/javascript">
+
+    function colourR() {
+		d3.selectAll("p").style("color", "red");
+	}
+
+	function colourB() {
+		d3.selectAll("p").style("color", "blue");
+	}
+
+	function addNewParagraph() {
+		var inputValue = document.getElementById("inputtedtext").value;
+		d3.select("#paragraph").insert("p").text(inputValue);
+	}
+
+	
 
 </script>
 
+</body>
+
 </html>
+
