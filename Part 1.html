@@ -36,13 +36,16 @@ Homework 2 - Part 1
 <script src="https://d3js.org/d3.v6.min.js"></script>
 <script type="text/javascript">
 
+   
+    function colourB() {
+		d3.selectAll("p").style("color", "blue");
+	}
+
+
     function colourR() {
 		d3.selectAll("p").style("color", "red");
 	}
 
-	function colourB() {
-		d3.selectAll("p").style("color", "blue");
-	}
 
 	function addNewParagraph() {
 		var inputValue = document.getElementById("inputtedtext").value;
